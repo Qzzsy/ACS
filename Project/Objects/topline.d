@@ -1,9 +1,0 @@
-.\objects\topline.o: ..\Applications\ICON\TopLine.c
-.\objects\topline.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\topline.o: ..\STemWin\inc\GUI.h
-.\objects\topline.o: ..\STemWin\inc\GUI_ConfDefaults.h
-.\objects\topline.o: ..\STemWin\Config\GUIConf.h
-.\objects\topline.o: ..\STemWin\inc\GUI_Type.h
-.\objects\topline.o: ..\STemWin\inc\LCD.h
-.\objects\topline.o: ..\STemWin\inc\Global.h
-.\objects\topline.o: ..\STemWin\inc\GUI_Version.h

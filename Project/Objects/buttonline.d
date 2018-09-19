@@ -1,9 +1,0 @@
-.\objects\buttonline.o: ..\Applications\ICON\ButtonLine.c
-.\objects\buttonline.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\buttonline.o: ..\STemWin\inc\GUI.h
-.\objects\buttonline.o: ..\STemWin\inc\GUI_ConfDefaults.h
-.\objects\buttonline.o: ..\STemWin\Config\GUIConf.h
-.\objects\buttonline.o: ..\STemWin\inc\GUI_Type.h
-.\objects\buttonline.o: ..\STemWin\inc\LCD.h
-.\objects\buttonline.o: ..\STemWin\inc\Global.h
-.\objects\buttonline.o: ..\STemWin\inc\GUI_Version.h

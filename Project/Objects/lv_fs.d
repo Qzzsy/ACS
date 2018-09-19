@@ -1,9 +1,0 @@
-.\objects\lv_fs.o: ..\lvgl\lv_misc\lv_fs.c
-.\objects\lv_fs.o: ..\lvgl\lv_misc\lv_fs.h
-.\objects\lv_fs.o: ..\lvgl\lv_misc\../../lv_conf.h
-.\objects\lv_fs.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\lv_fs.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\lv_fs.o: ..\lvgl\lv_misc\lv_mem.h
-.\objects\lv_fs.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\lv_fs.o: ..\lvgl\lv_misc\lv_ll.h
-.\objects\lv_fs.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

@@ -1,9 +1,0 @@
-.\objects\icon_f.o: ..\Applications\ICON\ICON_F.c
-.\objects\icon_f.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\icon_f.o: ..\STemWin\inc\GUI.h
-.\objects\icon_f.o: ..\STemWin\inc\GUI_ConfDefaults.h
-.\objects\icon_f.o: ..\STemWin\Config\GUIConf.h
-.\objects\icon_f.o: ..\STemWin\inc\GUI_Type.h
-.\objects\icon_f.o: ..\STemWin\inc\LCD.h
-.\objects\icon_f.o: ..\STemWin\inc\Global.h
-.\objects\icon_f.o: ..\STemWin\inc\GUI_Version.h
