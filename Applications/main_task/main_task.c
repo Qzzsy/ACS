@@ -4,7 +4,7 @@
 #include "../lv_font.h"
 
 extern lv_font_t WRJZY_20;
-extern lv_font_t HZ_16;
+extern lv_font_t HZChar_16;
 char *menu_name[] = {" ”∆µ","“Ù¿÷","¿∂—¿","Œﬁœﬂ","¿÷“Ù","—¿¿∂","ƒ÷÷”","¡øµÁ","…Ë÷√"};
 
 
@@ -30,7 +30,7 @@ void main_task_creat()
     //GUI_GetDataFromMemory(HZ_16,"ƒ„∫√");
     static lv_style_t label_style;
     lv_style_copy(&label_style, &lv_style_plain);
-    label_style.text.font = &HZ_16; /*Set the base font whcih is concatenated with the others*/ 	 
+    label_style.text.font = &HZChar_16; /*Set the base font whcih is concatenated with the others*/ 	 
     
     lv_obj_t * label = lv_label_create(lv_scr_act(),NULL);	
 

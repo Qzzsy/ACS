@@ -582,6 +582,11 @@ static uint32_t lv_txt_utf8_get_length(const char * txt)
  */
 static uint8_t lv_txt_ascii_size(const char * str)
 {
+    /*!< 判断是否为中文编码 */
+    if ((uint8_t)*str > 0x80)
+    {
+        return 2;
+    }
     return 1;
 }
 
@@ -618,9 +623,16 @@ static uint32_t lv_txt_ascii_conv_wc(uint32_t c)
  */
 static uint32_t lv_txt_ascii_next(const char * txt, uint32_t * i)
 {
-    if(i == NULL) return txt[1];    /*Get the next char */
+    if(i == NULL)
+        return txt[1];    /*Get the next char */
 
-    uint8_t letter = txt[*i] ;
+    uint32_t letter = txt[*i];
+    if (letter > 0x80)
+    {
+        (*i)++;
+        letter <<= 8;
+        letter |= txt[*i];
+    }
     (*i)++;
     return letter;
 }

@@ -893,9 +893,39 @@
               <FilePath>..\lvgl\lv_draw\lv_draw.c</FilePath>
             </File>
             <File>
+              <FileName>lv_draw_arc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_draw\lv_draw_arc.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_img.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_draw\lv_draw_img.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_label.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_draw\lv_draw_label.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_line.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_draw\lv_draw_line.c</FilePath>
+            </File>
+            <File>
               <FileName>lv_draw_rbasic.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_draw\lv_draw_rbasic.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_rect.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_draw\lv_draw_rect.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_draw_triangle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_draw\lv_draw_triangle.c</FilePath>
             </File>
             <File>
               <FileName>lv_draw_vbasic.c</FileName>
@@ -943,6 +973,11 @@
               <FilePath>..\lvgl\lv_misc\lv_ll.c</FilePath>
             </File>
             <File>
+              <FileName>lv_log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_misc\lv_log.c</FilePath>
+            </File>
+            <File>
               <FileName>lv_math.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_misc\lv_math.c</FilePath>
@@ -963,11 +998,6 @@
               <FilePath>..\lvgl\lv_misc\lv_templ.c</FilePath>
             </File>
             <File>
-              <FileName>lv_trigo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_trigo.c</FilePath>
-            </File>
-            <File>
               <FileName>lv_txt.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_misc\lv_txt.c</FilePath>
@@ -983,6 +1013,11 @@
           <GroupName>lv_objx</GroupName>
           <Files>
             <File>
+              <FileName>lv_arc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_objx\lv_arc.c</FilePath>
+            </File>
+            <File>
               <FileName>lv_bar.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_objx\lv_bar.c</FilePath>
@@ -996,6 +1031,11 @@
               <FileName>lv_btnm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_objx\lv_btnm.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_calendar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_objx\lv_calendar.c</FilePath>
             </File>
             <File>
               <FileName>lv_cb.c</FileName>
@@ -1026,6 +1066,11 @@
               <FileName>lv_img.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_objx\lv_img.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_imgbtn.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_objx\lv_imgbtn.c</FilePath>
             </File>
             <File>
               <FileName>lv_kb.c</FileName>
@@ -1071,6 +1116,11 @@
               <FileName>lv_page.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_objx\lv_page.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_preload.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_objx\lv_preload.c</FilePath>
             </File>
             <File>
               <FileName>lv_roller.c</FileName>
@@ -1133,6 +1183,11 @@
               <FilePath>..\lvgl\lv_themes\lv_theme_mono.c</FilePath>
             </File>
             <File>
+              <FileName>lv_theme_nemo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_themes\lv_theme_nemo.c</FilePath>
+            </File>
+            <File>
               <FileName>lv_theme_night.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\lv_themes\lv_theme_night.c</FilePath>
@@ -1153,84 +1208,94 @@
           <GroupName>lv_fonts</GroupName>
           <Files>
             <File>
+              <FileName>lv_font_builtin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_fonts\lv_font_builtin.c</FilePath>
+            </File>
+            <File>
               <FileName>lv_font_dejavu_10.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_10.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_10.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_10_cyrillic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_10_cyrillic.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_10_cyrillic.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_10_latin_sup.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_10_latin_sup.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_10_latin_sup.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_20.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_20.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_20.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_20_cyrillic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_20_cyrillic.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_20_cyrillic.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_20_latin_sup.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_20_latin_sup.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_20_latin_sup.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_30.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_30.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_30.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_30_cyrillic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_30_cyrillic.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_30_cyrillic.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_30_latin_sup.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_30_latin_sup.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_30_latin_sup.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_40.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_40.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_40.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_40_cyrillic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_40_cyrillic.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_40_cyrillic.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_dejavu_40_latin_sup.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_dejavu_40_latin_sup.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_dejavu_40_latin_sup.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_monospace_8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\lv_fonts\lv_font_monospace_8.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_symbol_10.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_symbol_10.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_symbol_10.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_symbol_20.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_symbol_20.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_symbol_20.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_symbol_30.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_symbol_30.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_symbol_30.c</FilePath>
             </File>
             <File>
               <FileName>lv_font_symbol_40.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\lvgl\lv_misc\lv_fonts\lv_font_symbol_40.c</FilePath>
+              <FilePath>..\lvgl\lv_fonts\lv_font_symbol_40.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1298,14 +1363,19 @@
               <FilePath>..\Applications\font\WRJZY_40.c</FilePath>
             </File>
             <File>
-              <FileName>GUICharPEx.c</FileName>
+              <FileName>HZChar16.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Applications\font\GUICharPEx.c</FilePath>
+              <FilePath>..\Applications\font\HZChar16.c</FilePath>
             </File>
             <File>
-              <FileName>HZChar.c</FileName>
+              <FileName>HZCharPEx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Applications\font\HZChar.c</FilePath>
+              <FilePath>..\Applications\font\HZCharPEx.c</FilePath>
+            </File>
+            <File>
+              <FileName>Font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Applications\font\Font.c</FilePath>
             </File>
           </Files>
         </Group>

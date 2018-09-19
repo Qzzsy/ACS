@@ -70,7 +70,7 @@
 #define LV_COLOR_TRANSP    LV_COLOR_LIME          /*Images pixels with this color will not be drawn (with chroma keying)*/
 
 /*Text settings*/
-#define LV_TXT_UTF8             1                /*Enable UTF-8 coded Unicode character usage */
+#define LV_TXT_UTF8             0                /*Enable UTF-8 coded Unicode character usage */
 #define LV_TXT_BREAK_CHARS     " ,.;:-_"         /*Can break texts on these chars*/
 
 /*Graphics feature usage*/

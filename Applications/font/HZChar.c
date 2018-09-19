@@ -1,5 +1,5 @@
 
-#include "../lv_font.h"
+#include "../lvgl/lv_misc/lv_font.h"
 
 #define USE_WRJZY_20 2
 
@@ -44,7 +44,7 @@ lv_font_t HZ_16 =
     .unicode_first = 0x8140,	/*First Unicode letter in this font*/
     .unicode_last = 0xfefe,	/*Last Unicode letter in this font*/
     .h_px = 20,				/*Font height in pixels*/
-    .glyph_bitmap = GUI_FontDataBuf,	/*Bitmap of glyphs*/
+//    .glyph_bitmap = GUI_FontDataBuf,	/*Bitmap of glyphs*/
     .glyph_dsc = HZ16_glyph_dsc,		/*Description of glyphs*/
     .unicode_list = NULL,	/*List of unicode characters*/
     .get_bitmap = lv_font_get_bitmap_continuous,	/*Function pointer to get glyph's bitmap*/
