@@ -15,7 +15,7 @@
 
 #include <board.h>
 #include <rtthread.h>
-#include "lvgl/lvgl.h"
+#include "lvgl.h"
 #include "tft.h"
 #include "touchpad.h"
 #include "touch_ft6306.h"

@@ -9,7 +9,7 @@
  
 #include "usart.h"
 #include "touchpad.h"
-#include "lvgl/lv_hal/lv_hal.h"
+#include "lv_hal/lv_hal.h"
 #include "touch_ft6306.h"
 #include "lcd_fsmc.h"
 

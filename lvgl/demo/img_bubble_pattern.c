@@ -1,5 +1,5 @@
 #include <stdint.h> 
-#include "lvgl/lv_misc/lv_color.h"
+#include "lv_misc/lv_color.h"
 
 #if LV_COLOR_DEPTH == 24
 

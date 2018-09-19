@@ -19,7 +19,7 @@
 #include "board.h"
 #include "usart.h"
 #include "gpio.h"
-#include "lvgl/lvgl.h"
+#include "lvgl.h"
 
 
 /**

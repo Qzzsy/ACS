@@ -6,14 +6,14 @@
 /*********************
  *      INCLUDES
  *********************/
-#include  "lv_conf.h"
-#include "lvgl/lv_core/lv_vdb.h"
-#include "lvgl/lv_hal/lv_hal.h"
+#include  "../lv_conf.h"
+#include "lv_core/lv_vdb.h"
+#include "lv_hal/lv_hal.h"
 #include <string.h>
 #include "lcd_fsmc.h"
 #include "rtthread.h"
 
-#include "tft.h"
+#include "lv_my_dev/tft.h"
 
 /*********************
  *      DEFINES

@@ -1,7 +1,7 @@
 
-#include "lvgl/lvgl.h"
+#include "../lvgl/lvgl.h"
 #include "main_task.h"
-#include "../lv_font.h"
+#include "../lvgl/lv_misc/lv_font.h"
 
 extern lv_font_t WRJZY_20;
 extern lv_font_t HZChar_16;

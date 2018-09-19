@@ -15,7 +15,7 @@
 #include "LCD_TEST.h"
 #include "delay.h"
 #include "lcd_fsmc.h"
-#include "lvgl/lvgl.h"
+#include "lvgl.h"
 #include "sram.h"	    
 #include "demo.h"	 
 #include "main_task.h"   
