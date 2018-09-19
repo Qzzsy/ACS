@@ -5,10 +5,10 @@
 
 /* 定义对应的宏定义显示对应大小的字体 */
 #define USING_CN_16_CHAR
-//#define USING_CN_24_CHAR
-//#define USING_CN_32_CHAR
-//#define USING_CN_40_CHAR
-//#define USING_CN_48_CHAR
+#define USING_CN_24_CHAR
+#define USING_CN_32_CHAR
+#define USING_CN_40_CHAR
+#define USING_CN_48_CHAR
 
 /* 选择使用内部的字库还是外部字库 */
 #define USE_CN_INT_LIB
@@ -16,6 +16,16 @@
 
 // #define USE_CN_EXT_LIB
 // #define USE_ASCII_EXT_LIB
+
+#if defined USE_CN_INT_LIB || defined USE_ASCII_INT_LIB
+/* 字库位于内部的FLASH */
+#define USE_SMALL_LIB_FONT              (1)     //1为使能内部字库
+#endif
+
+/* 字库位于外部的FLASH */
+#define USE_GBK_LIB_FONT                (1)     //1为使能GBK字库
+/* 字库位于外部的FLASH */
+#define USE_GB2312_LIB_FONT             (0)     //1为使能GB2312字库
 
 /* 字符的信息 */
 typedef struct

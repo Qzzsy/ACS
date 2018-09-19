@@ -31,19 +31,6 @@
 #define FONT_OK              (uint32_t)(-2)
 #define FONT_NO_FIND_FONT    (uint32_t)(-3)
 
-
-#if defined USE_CN_INT_LIB || defined USE_ASCII_INT_LIB
-/* 字库位于内部的FLASH */
-#define USE_SMALL_LIB_FONT              (1)     //1为使能内部字库
-#endif
-
-#ifdef USE_CN_EXT_LIB
-/* 字库位于外部的FLASH */
-#define USE_GBK_LIB_FONT                (0)     //1为使能GBK字库
-/* 字库位于外部的FLASH */
-#define USE_GB2312_LIB_FONT             (0)     //1为使能GB2312字库
-#endif
-
 #if USE_SMALL_LIB_FONT == 1
 /* 中文字库最大容量 */
 #define ChAR_NUM_MAX          200

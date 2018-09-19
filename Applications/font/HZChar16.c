@@ -5,8 +5,8 @@
 /* 字体信息参数，不需要更改 */
 const paCharsInfo_t FontCn16 = 
 {
-    {8,  16, 8, },
-    {16, 16, 16,},
+    {8,  16, 8 },
+    {16, 16, 16},
 };
 
 #ifdef USE_CN_INT_LIB
@@ -131,8 +131,16 @@ const unsigned char ASCII08x16[] =
 
 lv_font_t HZChar_16 =
     {
+#if defined USE_GBK_LIB_FONT == 1
         .unicode_first = 0x8140,                     /*First Unicode letter in this font*/
         .unicode_last = 0xfefe,                      /*Last Unicode letter in this font*/
+#elif defined USE_GB2312_LIB_FONT == 1
+        .unicode_first = 0xA1A1,                     /*First Unicode letter in this font*/
+        .unicode_last = 0xfefe,                      /*Last Unicode letter in this font*/
+#else
+        .unicode_first = 0x20,                     /*First Unicode letter in this font*/
+        .unicode_last = 0x7f,                      /*Last Unicode letter in this font*/
+#endif
         .h_px = 16,                                  /*Font height in pixels*/
         .glyph_bitmap = lv_FontDataBuf,             /*Bitmap of glyphs*/
         .glyph_dsc = (void *)&FontCn16,             /*Description of glyphs*/

@@ -1372,6 +1372,26 @@
               <FileType>1</FileType>
               <FilePath>..\Applications\font\HZCharPEx.c</FilePath>
             </File>
+            <File>
+              <FileName>HZChar24.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Applications\font\HZChar24.c</FilePath>
+            </File>
+            <File>
+              <FileName>HZChar32.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Applications\font\HZChar32.c</FilePath>
+            </File>
+            <File>
+              <FileName>HZChar40.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Applications\font\HZChar40.c</FilePath>
+            </File>
+            <File>
+              <FileName>HZChar48.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Applications\font\HZChar48.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
