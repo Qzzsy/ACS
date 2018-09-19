@@ -2,7 +2,7 @@
 .\objects\pwm.o: ..\Bsp\Drivers\PWM\pwm.h
 .\objects\pwm.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\pwm.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\pwm.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pwm.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\pwm.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\pwm.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\pwm.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h

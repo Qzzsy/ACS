@@ -2,7 +2,7 @@
 .\objects\sram.o: ..\Bsp\Drivers\sram\sram.h
 .\objects\sram.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\sram.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\sram.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sram.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\sram.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\sram.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\sram.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h

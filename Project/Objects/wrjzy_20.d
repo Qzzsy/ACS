@@ -1,8 +1,8 @@
 .\objects\wrjzy_20.o: ..\Applications\font\WRJZY_20.c
 .\objects\wrjzy_20.o: ..\lvgl\lv_misc\lv_fonts\../lv_font.h
 .\objects\wrjzy_20.o: ..\lvgl\lv_misc\lv_fonts\../../../lv_conf.h
-.\objects\wrjzy_20.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\wrjzy_20.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\wrjzy_20.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\wrjzy_20.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\wrjzy_20.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\wrjzy_20.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
 .\objects\wrjzy_20.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h

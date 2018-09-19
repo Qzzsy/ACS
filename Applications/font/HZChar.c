@@ -41,8 +41,8 @@ static const lv_font_glyph_dsc_t HZ16_glyph_dsc[] =
 
 lv_font_t HZ_16 = 
 {    
-    .unicode_first = 32,	/*First Unicode letter in this font*/
-    .unicode_last = 126,	/*Last Unicode letter in this font*/
+    .unicode_first = 0x8140,	/*First Unicode letter in this font*/
+    .unicode_last = 0xfefe,	/*Last Unicode letter in this font*/
     .h_px = 20,				/*Font height in pixels*/
     .glyph_bitmap = GUI_FontDataBuf,	/*Bitmap of glyphs*/
     .glyph_dsc = HZ16_glyph_dsc,		/*Description of glyphs*/

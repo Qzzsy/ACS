@@ -2,7 +2,7 @@
 .\objects\misc.o: ..\Bsp\Libraries\inc\misc.h
 .\objects\misc.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\misc.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\misc.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\misc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\misc.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\misc.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\misc.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h

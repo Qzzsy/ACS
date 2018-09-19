@@ -1,10 +1,10 @@
 .\objects\demo.o: ..\lvgl\demo\demo.c
 .\objects\demo.o: ..\..\Cliet\lvgl/lvgl.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_misc/lv_task.h
-.\objects\demo.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\demo.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_misc/lv_mem.h
-.\objects\demo.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_misc/lv_ll.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_hal/lv_hal.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_hal/lv_hal_disp.h
@@ -13,7 +13,7 @@
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_hal/../lv_misc/../../lv_conf.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_hal/lv_hal_indev.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_hal/../lv_misc/lv_area.h
-.\objects\demo.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\demo.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_hal/lv_hal_tick.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_core/lv_obj.h
 .\objects\demo.o: ..\..\Cliet\lvgl/lv_core/../../lv_conf.h

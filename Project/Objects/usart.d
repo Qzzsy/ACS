@@ -1,7 +1,7 @@
 .\objects\usart.o: ..\RT-Thread\drivers\usart.c
 .\objects\usart.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\usart.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\usart.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\usart.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h
@@ -40,16 +40,16 @@
 .\objects\usart.o: ..\RT-Thread\rtConfig\rtconfig.h
 .\objects\usart.o: ..\RT-Thread\include\rtdebug.h
 .\objects\usart.o: ..\RT-Thread\include\rtdef.h
-.\objects\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\usart.o: ..\RT-Thread\include\rtlibc.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_stat.h
-.\objects\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\time.h
+.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_errno.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_fcntl.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_ioctl.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_dirent.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_signal.h
-.\objects\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\signal.h
+.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\signal.h
 .\objects\usart.o: ..\RT-Thread\include\libc/libc_fdset.h
 .\objects\usart.o: ..\RT-Thread\include\rtservice.h
 .\objects\usart.o: ..\RT-Thread\include\rtm.h
@@ -66,7 +66,7 @@
 .\objects\usart.o: ..\RT-Thread\components\drivers\include\rtdevice.h
 .\objects\usart.o: ..\RT-Thread\components\drivers\include\ipc/poll.h
 .\objects\usart.o: ..\RT-Thread\components\drivers\include\drivers/spi.h
-.\objects\usart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\usart.o: ..\RT-Thread\components\drivers\include\drivers/serial.h
 .\objects\usart.o: ..\RT-Thread\components\drivers\include\drivers/i2c.h
 .\objects\usart.o: ..\RT-Thread\components\drivers\include\drivers/i2c_dev.h

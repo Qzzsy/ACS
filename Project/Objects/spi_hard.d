@@ -2,7 +2,7 @@
 .\objects\spi_hard.o: ..\Bsp\Drivers\spi_hard\spi_hard.h
 .\objects\spi_hard.o: ..\Bsp\Libraries\CMSIS\Device\Include\STM32f4xx.h
 .\objects\spi_hard.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\spi_hard.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\spi_hard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\spi_hard.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\spi_hard.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\spi_hard.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h
@@ -40,16 +40,16 @@
 .\objects\spi_hard.o: ..\RT-Thread\rtConfig\rtconfig.h
 .\objects\spi_hard.o: ..\RT-Thread\include\rtdebug.h
 .\objects\spi_hard.o: ..\RT-Thread\include\rtdef.h
-.\objects\spi_hard.o: D:\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\spi_hard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\spi_hard.o: ..\RT-Thread\include\rtlibc.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_stat.h
-.\objects\spi_hard.o: D:\keil\ARM\ARMCC\Bin\..\include\time.h
+.\objects\spi_hard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_errno.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_fcntl.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_ioctl.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_dirent.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_signal.h
-.\objects\spi_hard.o: D:\keil\ARM\ARMCC\Bin\..\include\signal.h
+.\objects\spi_hard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\signal.h
 .\objects\spi_hard.o: ..\RT-Thread\include\libc/libc_fdset.h
 .\objects\spi_hard.o: ..\RT-Thread\include\rtservice.h
 .\objects\spi_hard.o: ..\RT-Thread\include\rtm.h
@@ -64,7 +64,7 @@
 .\objects\spi_hard.o: ..\RT-Thread\components\drivers\include\rtdevice.h
 .\objects\spi_hard.o: ..\RT-Thread\components\drivers\include\ipc/poll.h
 .\objects\spi_hard.o: ..\RT-Thread\components\drivers\include\drivers/spi.h
-.\objects\spi_hard.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\spi_hard.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\spi_hard.o: ..\RT-Thread\components\drivers\include\drivers/serial.h
 .\objects\spi_hard.o: ..\RT-Thread\components\drivers\include\drivers/i2c.h
 .\objects\spi_hard.o: ..\RT-Thread\components\drivers\include\drivers/i2c_dev.h

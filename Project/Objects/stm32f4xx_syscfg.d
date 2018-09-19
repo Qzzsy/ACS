@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_syscfg.o: ..\Bsp\Libraries\inc\stm32f4xx_syscfg.h
 .\objects\stm32f4xx_syscfg.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\stm32f4xx_syscfg.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\stm32f4xx_syscfg.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_syscfg.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_syscfg.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\stm32f4xx_syscfg.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\stm32f4xx_syscfg.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h

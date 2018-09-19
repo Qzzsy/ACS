@@ -2,7 +2,7 @@
 .\objects\touch_ft6306.o: ..\Bsp\Peripheral\touch\touch_ft6306.h
 .\objects\touch_ft6306.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\touch_ft6306.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\touch_ft6306.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\touch_ft6306.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\touch_ft6306.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\touch_ft6306.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\touch_ft6306.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h

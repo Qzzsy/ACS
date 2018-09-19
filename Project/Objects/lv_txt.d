@@ -1,12 +1,12 @@
 .\objects\lv_txt.o: ..\lvgl\lv_misc\lv_txt.c
 .\objects\lv_txt.o: ..\lvgl\lv_misc\lv_txt.h
-.\objects\lv_txt.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\lv_txt.o: ..\lvgl\lv_misc\lv_area.h
-.\objects\lv_txt.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
-.\objects\lv_txt.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lv_txt.o: ..\lvgl\lv_misc\lv_font.h
 .\objects\lv_txt.o: ..\lvgl\lv_misc\../../lv_conf.h
-.\objects\lv_txt.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_txt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\lv_txt.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\lv_txt.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
 .\objects\lv_txt.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h

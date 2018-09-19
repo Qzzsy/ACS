@@ -1,13 +1,13 @@
 .\objects\lv_cont.o: ..\lvgl\lv_objx\lv_cont.c
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../../lv_conf.h
-.\objects\lv_cont.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\lv_cont.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\lv_cont.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lv_cont.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_cont.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_cont.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\lv_cont.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../../lv_conf.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../lv_core/lv_obj.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../lv_core/../../lv_conf.h
-.\objects\lv_cont.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_cont.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../lv_core/lv_style.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../lv_core/../lv_misc/lv_color.h
 .\objects\lv_cont.o: ..\lvgl\lv_objx\../lv_core/../lv_misc/../../lv_conf.h

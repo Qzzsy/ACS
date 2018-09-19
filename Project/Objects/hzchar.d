@@ -1,8 +1,8 @@
 .\objects\hzchar.o: ..\Applications\font\HZChar.c
 .\objects\hzchar.o: ..\lvgl\lv_misc\lv_fonts\../lv_font.h
 .\objects\hzchar.o: ..\lvgl\lv_misc\lv_fonts\../../../lv_conf.h
-.\objects\hzchar.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\hzchar.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\hzchar.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hzchar.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\hzchar.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\hzchar.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
 .\objects\hzchar.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h

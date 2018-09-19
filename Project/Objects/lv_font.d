@@ -1,9 +1,9 @@
 .\objects\lv_font.o: ..\lvgl\lv_misc\lv_font.c
 .\objects\lv_font.o: ..\lvgl\lv_misc\../../lv_conf.h
-.\objects\lv_font.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_font.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\lv_font.o: ..\lvgl\lv_misc\lv_font.h
 .\objects\lv_font.o: ..\lvgl\lv_misc\../../lv_conf.h
-.\objects\lv_font.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_font.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lv_font.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\lv_font.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
 .\objects\lv_font.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h

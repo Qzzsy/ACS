@@ -2,7 +2,7 @@
 .\objects\iic.o: ..\Bsp\Drivers\iic\iic.h
 .\objects\iic.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\iic.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
-.\objects\iic.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\iic.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\iic.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\iic.o: ..\Bsp\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\iic.o: ..\Bsp\Libraries\CMSIS\Include\core_cmSimd.h

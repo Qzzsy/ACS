@@ -27,7 +27,7 @@ void main_task_creat()
 	lv_obj_set_style(scr,&style_new);
     
     
-    GUI_GetDataFromMemory(HZ_16,"ÄãºÃ");
+    //GUI_GetDataFromMemory(HZ_16,"ÄãºÃ");
     static lv_style_t label_style;
     lv_style_copy(&label_style, &lv_style_plain);
     label_style.text.font = &HZ_16; /*Set the base font whcih is concatenated with the others*/ 	 
@@ -36,7 +36,7 @@ void main_task_creat()
 
 	lv_label_set_style(label, &label_style); 
     lv_obj_set_pos(label,20,20);
-    lv_label_set_text (label," !");
+    lv_label_set_text (label,"×£ÊÀÒ¶");
     
 //    label_style.text.font = &WRJZY_20; /*Set the base font whcih is concatenated with the others*/ 	 
 //    

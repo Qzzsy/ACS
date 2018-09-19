@@ -3,13 +3,13 @@
 .\objects\lv_draw_rbasic.o: ..\lvgl\lv_draw\../../lv_conf.h
 .\objects\lv_draw_rbasic.o: ..\lvgl\lv_draw\../lv_misc/lv_color.h
 .\objects\lv_draw_rbasic.o: ..\lvgl\lv_draw\../lv_misc/../../lv_conf.h
-.\objects\lv_draw_rbasic.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_draw_rbasic.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lv_draw_rbasic.o: ..\lvgl\lv_draw\../lv_misc/lv_area.h
-.\objects\lv_draw_rbasic.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
-.\objects\lv_draw_rbasic.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_draw_rbasic.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lv_draw_rbasic.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\lv_draw_rbasic.o: ..\lvgl\lv_draw\../lv_misc/lv_font.h
 .\objects\lv_draw_rbasic.o: ..\lvgl\lv_draw\../lv_misc/../../lv_conf.h
-.\objects\lv_draw_rbasic.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_draw_rbasic.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\lv_draw_rbasic.o: ..\Bsp\Libraries\CMSIS\Device\Include\stm32f4xx.h
 .\objects\lv_draw_rbasic.o: ..\Bsp\Libraries\CMSIS\Include\core_cm4.h
 .\objects\lv_draw_rbasic.o: ..\Bsp\Libraries\CMSIS\Include\core_cmInstr.h

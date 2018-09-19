@@ -1,10 +1,10 @@
 .\objects\lv_anim.o: ..\lvgl\lv_misc\lv_anim.c
 .\objects\lv_anim.o: ..\lvgl\lv_misc\lv_anim.h
 .\objects\lv_anim.o: ..\lvgl\lv_misc\../../lv_conf.h
-.\objects\lv_anim.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\lv_anim.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\lv_anim.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\lv_anim.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lv_anim.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_anim.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_anim.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_anim.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\lv_anim.o: ..\lvgl\lv_misc\../lv_hal/lv_hal_tick.h
 .\objects\lv_anim.o: ..\lvgl\lv_misc\lv_task.h
 .\objects\lv_anim.o: ..\lvgl\lv_misc\lv_mem.h
