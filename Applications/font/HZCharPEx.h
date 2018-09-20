@@ -11,11 +11,11 @@
 #define USING_CN_48_CHAR
 
 /* 选择使用内部的字库还是外部字库 */
-#define USE_CN_INT_LIB
-#define USE_ASCII_INT_LIB
+//#define USE_CN_INT_LIB
+//#define USE_ASCII_INT_LIB
 
-// #define USE_CN_EXT_LIB
-// #define USE_ASCII_EXT_LIB
+ #define USE_CN_EXT_LIB
+ #define USE_ASCII_EXT_LIB
 
 /* 点阵数据缓存, 必须大于等于单个字模需要的存储空间*/ 
 #define BYTES_PER_FONT      512 
@@ -96,7 +96,7 @@ extern uint8_t lv_FontDataBuf[BYTES_PER_FONT];
 const uint8_t *lv_hzPEx_font_get_bitmap_continuous(const lv_font_t *font, uint32_t CnCode);
 int16_t lv_hzPEx_font_get_width_continuous(const lv_font_t * font, uint32_t CnCode);
 #ifdef USE_CN_EXT_LIB
-void FontSetReadDataApi(void (*pfunc)(uint32_t, uint8_t *, uint16_t))
+void FontSetReadDataApi(void (*pfunc)(uint32_t, uint8_t *, uint16_t));
 #endif
 
 #endif

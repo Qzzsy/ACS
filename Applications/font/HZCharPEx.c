@@ -31,14 +31,18 @@
 #define FONT_OK              (uint32_t)(-2)
 #define FONT_NO_FIND_FONT    (uint32_t)(-3)
 
+#define GBK_FONT            0x00
+#define GB2312_FONT         0x01
+#define NONE_FONT           0xff
+
 #if USE_SMALL_LIB_FONT == 1
 /* 中文字库最大容量 */
 #define ChAR_NUM_MAX          200
 #endif
 
-#ifdef USE_CN_EXT_LIB
+#if defined USE_CN_EXT_LIB || defined USE_ASCII_EXT_LIB
 uint8_t lv_FontDataBuf[BYTES_PER_FONT];
-void (*ReadDataApi)(uint32_t, uint8_t *, uint16_t);
+void (*ReadDataApi)(uint32_t, uint8_t *, uint16_t) = NULL;
 #endif
 
 /* 英文的字库的地址如果不存在，请将其注释掉，避免出现错误 */
@@ -243,6 +247,8 @@ static inline uint8_t * _GetASCII_FontData(const lv_font_t *font, uint32_t CnCod
     }
 #endif /* USING_CN_48_CHAR */
 _ReadASCII_Data:
+    if (ReadDataApi == NULL)
+        return (uint8_t *)FONT_ERROR;
     ReadDataApi(FlashAddr, lv_FontDataBuf, BytesPerFont);
     return lv_FontDataBuf;
 #endif
@@ -260,9 +266,19 @@ _ERROR:
 static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t CnCode)
 {
     uint16_t i = 0;
-#if defined USE_ASCII_EXT_LIB || defined USE_CN_EXT_LIB
+#if defined USE_CN_EXT_LIB
     uint32_t FlashAddr = 0;
     uint8_t FontType = NONE_FONT;
+    paCharsInfo_t * paCharsInfo = (paCharsInfo_t *)font->glyph_dsc;
+    uint16_t SumBytes;
+    uint16_t BytesPerFont = paCharsInfo->paAsciiInfo.Hight * paCharsInfo->paAsciiInfo.PerLinePixels / 8;
+    
+    SumBytes = BytesPerFont;
+    
+    if (BytesPerFont > BYTES_PER_FONT)
+    {
+        BytesPerFont = BYTES_PER_FONT;
+    }
 #endif
 #ifdef USE_CN_INT_LIB
 #ifdef USING_CN_16_CHAR  
@@ -424,27 +440,30 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
 _ReadCN_Data:
     if (FontType == GBK_FONT)
     {
+        uint8_t code1, code2;
         /* 根据汉字内码的计算公式锁定起始地址 */
-        code2 = c >> 8;
-        code1 = c & 0xFF;
+        code2 = CnCode >> 8;
+        code1 = CnCode & 0xFF;
         
         /* 由于字符编码是安顺序存储的，先存储到高位（区号），然后是低位（位号）。而我们用的是小端格式，
             一个汉字两个字节，获取的16位变量，正好相反，16位变量的高位是位号，低位是区号。
         */
-        FlashAddr = ((code1 - 0xA1) * 94 + (code2 - 0xa1)) * GUI_CnInfo->SumBytes + FlashAddr;
+        FlashAddr = ((code1 - 0xA1) * 94 + (code2 - 0xa1)) * SumBytes + FlashAddr;
     }
     else if (FontType == GB2312_FONT)
     {
+        uint8_t code1, code2;
         /* 根据汉字内码的计算公式锁定起始地址 */
-        code2 = c >> 8;
-        code1 = c & 0xFF;
+        code2 = CnCode >> 8;
+        code1 = CnCode & 0xFF;
         
         /* 由于字符编码是安顺序存储的，先存储到高位（区号），然后是低位（位号）。而我们用的是小端格式，
             一个汉字两个字节，获取的16位变量，正好相反，16位变量的高位是位号，低位是区号。
         */
-        FlashAddr = ((code1 - 0x81) * 190 + (code2 - 0x40) - (code2 / 128)) * GUI_CnInfo->SumBytes + FlashAddr;
+        FlashAddr = ((code1 - 0x81) * 190 + (code2 - 0x40) - (code2 / 128)) * SumBytes + FlashAddr;
     }
-
+    if (ReadDataApi == NULL)
+        return (uint8_t *)FONT_ERROR;
     ReadDataApi(FlashAddr, lv_FontDataBuf, BytesPerFont);
     return lv_FontDataBuf;
 #endif
