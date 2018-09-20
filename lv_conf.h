@@ -126,12 +126,6 @@
 #define USE_LV_FONT_DEJAVU_40_CYRILLIC     0
 #define USE_LV_FONT_SYMBOL_40              0
 
-
-/* Private macro Definition --------------------------------------------------*/
-/* 点阵数据缓存, 必须大于等于单个字模需要的存储空间*/ 
-#define BYTES_PER_FONT      512 
-
-
 /*===================
  *  LV_OBJ SETTINGS
  *==================*/

@@ -17,6 +17,9 @@
 // #define USE_CN_EXT_LIB
 // #define USE_ASCII_EXT_LIB
 
+/* 点阵数据缓存, 必须大于等于单个字模需要的存储空间*/ 
+#define BYTES_PER_FONT      512 
+
 #if defined USE_CN_INT_LIB || defined USE_ASCII_INT_LIB
 /* 字库位于内部的FLASH */
 #define USE_SMALL_LIB_FONT              (1)     //1为使能内部字库

@@ -111,7 +111,7 @@ static inline uint8_t * _GetASCII_FontData(const lv_font_t *font, uint32_t CnCod
     uint8_t WordNun; 
     paCharsInfo_t * paCharsInfo = (paCharsInfo_t *)font->glyph_dsc;
     uint16_t SumBytes;
-    uint16_t BytesPerFont = paCharsInfo->paAsciiInfo.Hight * paCharsInfo->paAsciiInfo.PerLinePixels;
+    uint16_t BytesPerFont = paCharsInfo->paAsciiInfo.Hight * paCharsInfo->paAsciiInfo.PerLinePixels / 8;
     
     SumBytes = BytesPerFont;
     
