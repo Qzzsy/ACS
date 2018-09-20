@@ -36,6 +36,11 @@
 #define ChAR_NUM_MAX          200
 #endif
 
+#ifdef USE_CN_EXT_LIB
+uint8_t lv_FontDataBuf[BYTES_PER_FONT];
+void (*ReadDataApi)(uint32_t, uint8_t *, uint16_t);
+#endif
+
 /* 英文的字库的地址如果不存在，请将其注释掉，避免出现错误 */
 #ifdef USE_ASCII_EXT_LIB
 /* 英文字库基地址 */
@@ -66,7 +71,6 @@
 #define GB2312_FONT_CN48_BASE_ADDR                 0x20000000
 #endif
 
-uint8_t lv_FontDataBuf[BYTES_PER_FONT];
 
 #ifdef USING_CN_16_CHAR
 extern Cn16Data_t HanZi16Data[];
@@ -239,8 +243,8 @@ static inline uint8_t * _GetASCII_FontData(const lv_font_t *font, uint32_t CnCod
     }
 #endif /* USING_CN_48_CHAR */
 _ReadASCII_Data:
-    _GUI_DeviceAPI.ReadData(FlashAddr, lv_FontDataBuf, BytesPerFont);
-    return _GUI_FontDataBufFromFlash;
+    ReadDataApi(FlashAddr, lv_FontDataBuf, BytesPerFont);
+    return lv_FontDataBuf;
 #endif
 _ERROR:
     return (uint8_t *)FONT_ERROR;
@@ -441,8 +445,8 @@ _ReadCN_Data:
         FlashAddr = ((code1 - 0x81) * 190 + (code2 - 0x40) - (code2 / 128)) * GUI_CnInfo->SumBytes + FlashAddr;
     }
 
-    _GUI_DeviceAPI.ReadData(FlashAddr, _GUI_FontDataBufFromFlash, GUI_CnInfo->SumBytes);
-    GUI_CnInfo->FontDataBuf = _GUI_FontDataBufFromFlash;
+    ReadDataApi(FlashAddr, lv_FontDataBuf, BytesPerFont);
+    return lv_FontDataBuf;
 #endif
 _ERROR:
     return (uint8_t *)FONT_ERROR;
@@ -502,3 +506,9 @@ int16_t lv_hzPEx_font_get_width_continuous(const lv_font_t * font, uint32_t CnCo
     }
 }
 
+#ifdef USE_CN_EXT_LIB
+void FontSetReadDataApi(void (*pfunc)(uint32_t, uint8_t *, uint16_t))
+{
+    ReadDataApi = pfunc;
+}
+#endif

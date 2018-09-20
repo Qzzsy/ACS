@@ -1353,16 +1353,6 @@
           <GroupName>font</GroupName>
           <Files>
             <File>
-              <FileName>WRJZY_20.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Applications\font\WRJZY_20.c</FilePath>
-            </File>
-            <File>
-              <FileName>WRJZY_40.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Applications\font\WRJZY_40.c</FilePath>
-            </File>
-            <File>
               <FileName>HZChar16.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Applications\font\HZChar16.c</FilePath>

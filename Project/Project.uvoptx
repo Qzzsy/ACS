@@ -175,22 +175,6 @@
           <ExecCommand></ExecCommand>
           <Expression>\\KHD_2\../lvgl/lv_objx/lv_label.c\641</Expression>
         </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>468</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134268814</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Applications\font\HZCharPEx.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\KHD_2\../Applications/font/HZCharPEx.c\468</Expression>
-        </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
@@ -2647,30 +2631,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Applications\font\WRJZY_20.c</PathWithFileName>
-      <FilenameWithoutPath>WRJZY_20.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>21</GroupNumber>
-      <FileNumber>176</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Applications\font\WRJZY_40.c</PathWithFileName>
-      <FilenameWithoutPath>WRJZY_40.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>21</GroupNumber>
-      <FileNumber>177</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>..\Applications\font\HZChar16.c</PathWithFileName>
       <FilenameWithoutPath>HZChar16.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -2678,7 +2638,7 @@
     </File>
     <File>
       <GroupNumber>21</GroupNumber>
-      <FileNumber>178</FileNumber>
+      <FileNumber>176</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -2690,7 +2650,7 @@
     </File>
     <File>
       <GroupNumber>21</GroupNumber>
-      <FileNumber>179</FileNumber>
+      <FileNumber>177</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -2702,7 +2662,7 @@
     </File>
     <File>
       <GroupNumber>21</GroupNumber>
-      <FileNumber>180</FileNumber>
+      <FileNumber>178</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -2714,7 +2674,7 @@
     </File>
     <File>
       <GroupNumber>21</GroupNumber>
-      <FileNumber>181</FileNumber>
+      <FileNumber>179</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -2726,7 +2686,7 @@
     </File>
     <File>
       <GroupNumber>21</GroupNumber>
-      <FileNumber>182</FileNumber>
+      <FileNumber>180</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
