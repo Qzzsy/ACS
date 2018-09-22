@@ -284,8 +284,8 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
     { 
         for (i = 0; i < ChAR_NUM_MAX; i++)        //循环查询内码，查找汉字的数据
         {
-            if((HanZi16Index[i].Index[0] == ((CnCode >> 8) & 0xff))		
-                & (HanZi16Index[i].Index[1] == (CnCode & 0xff)))
+            if((HanZi16Index[i].Index[1] == ((CnCode >> 8) & 0xff))		
+                & (HanZi16Index[i].Index[0] == (CnCode & 0xff)))
             {
                 return (uint8_t *)HanZi16Data[i].Msk;
             }
@@ -299,8 +299,8 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
     {
         for (i = 0; i < ChAR_NUM_MAX; i++)
         {
-            if((HanZi24Index[i].Index[0] == ((CnCode >> 8) & 0xff))		
-                & (HanZi24Index[i].Index[1] == (CnCode & 0xff)))
+            if((HanZi24Index[i].Index[1] == ((CnCode >> 8) & 0xff))		
+                & (HanZi24Index[i].Index[0] == (CnCode & 0xff)))
             {
                 return (uint8_t *)HanZi24Data[i].Msk;
             }
@@ -314,8 +314,8 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
     {
         for (i = 0; i < ChAR_NUM_MAX; i++)
         {
-            if((HanZi32Index[i].Index[0] == ((CnCode >> 8) & 0xff))		
-                & (HanZi32Index[i].Index[1] == (CnCode & 0xff)))
+            if((HanZi32Index[i].Index[1] == ((CnCode >> 8) & 0xff))		
+                & (HanZi32Index[i].Index[0] == (CnCode & 0xff)))
             {
                 return (uint8_t *)HanZi32Data[i].Msk;
             }
@@ -329,8 +329,8 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
     {
         for (i = 0; i < ChAR_NUM_MAX; i++)
         {
-            if((HanZi40Index[i].Index[0] == ((CnCode >> 8) & 0xff))		
-                & (HanZi40Index[i].Index[1] == (CnCode & 0xff)))
+            if((HanZi40Index[i].Index[1] == ((CnCode >> 8) & 0xff))		
+                & (HanZi40Index[i].Index[0] == (CnCode & 0xff)))
             {
                 return (uint8_t *)HanZi40Data[i].Msk;
             }
@@ -344,8 +344,8 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
     {
         for (i = 0; i < ChAR_NUM_MAX; i++)
         {
-            if((HanZi48Index[i].Index[0] == ((CnCode >> 8) & 0xff))		
-                & (HanZi48Index[i].Index[1] == (CnCode & 0xff)))
+            if((HanZi48Index[i].Index[1] == ((CnCode >> 8) & 0xff))		
+                & (HanZi48Index[i].Index[0] == (CnCode & 0xff)))
             {
                 return (uint8_t *)HanZi48Data[i].Msk;
             }
