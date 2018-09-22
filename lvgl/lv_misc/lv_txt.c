@@ -629,9 +629,8 @@ static uint32_t lv_txt_ascii_next(const char * txt, uint32_t * i)
     uint32_t letter = txt[*i];
     if (letter > 0x80)
     {
+        letter = *(uint16_t *)(txt + *i);
         (*i)++;
-        letter <<= 8;
-        letter |= txt[*i];
     }
     (*i)++;
     return letter;

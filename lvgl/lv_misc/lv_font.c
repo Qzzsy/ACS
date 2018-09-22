@@ -164,7 +164,9 @@ uint8_t lv_font_get_bpp(const lv_font_t * font, uint32_t letter)
     const lv_font_t * font_i = font;
     while(font_i != NULL) {
         if (letter < 0x80)
+        {
             return font_i->bpp;
+        }
         if(letter >= font_i->unicode_first && letter <= font_i->unicode_last) {
             return font_i->bpp;
         }

@@ -19,9 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 
 #include "stm32f4xx.h"
-#include "rtthread.h"
 #include "string.h"
-#include "SPI_flash.h"
 #include "lv_misc/lv_font.h"
 #include "HZCharPEx.h"
 
@@ -48,22 +46,22 @@ void (*ReadDataApi)(uint32_t, uint8_t *, uint16_t) = NULL;
 /* 英文的字库的地址如果不存在，请将其注释掉，避免出现错误 */
 #ifdef USE_ASCII_EXT_LIB
 /* 英文字库基地址 */
-#define FONT_ASCII16_BASE_ADDR                 0x20000000
-#define FONT_ASCII24_BASE_ADDR                 0x20000000
-#define FONT_ASCII32_BASE_ADDR                 0x20000000
-#define FONT_ASCII40_BASE_ADDR                 0x20000000
-#define FONT_ASCII48_BASE_ADDR                 0x20000000
+#define FONT_ASCII16_BASE_ADDR                 0x00200000
+#define FONT_ASCII24_BASE_ADDR                 0x00200600
+#define FONT_ASCII32_BASE_ADDR                 0x00201800
+#define FONT_ASCII40_BASE_ADDR                 0x00203000
+#define FONT_ASCII48_BASE_ADDR                 0x00205d00
 #endif
 
 /* 汉字的字库的地址如果不存在，请将其注释掉，避免出现错误 */
 #if USE_GBK_LIB_FONT == 1
 
 /* 中文字库基地址 */
-#define GBK_FONT_CN16_BASE_ADDR                 0x20000000
-#define GBK_FONT_CN24_BASE_ADDR                 0x20000000
-#define GBK_FONT_CN32_BASE_ADDR                 0x20000000
-#define GBK_FONT_CN40_BASE_ADDR                 0x20000000
-#define GBK_FONT_CN48_BASE_ADDR                 0x20000000
+#define GBK_FONT_CN16_BASE_ADDR                 0x0020A000
+#define GBK_FONT_CN24_BASE_ADDR                 0x002C6000
+#define GBK_FONT_CN32_BASE_ADDR                 0x0046B000
+#define GBK_FONT_CN40_BASE_ADDR                 0x00758000
+#define GBK_FONT_CN48_BASE_ADDR                 0x00BE9000
 #endif
 
 #if USE_GB2312_LIB_FONT == 1
@@ -119,7 +117,7 @@ static inline uint8_t * _GetASCII_FontData(const lv_font_t *font, uint32_t CnCod
     uint8_t WordNun; 
     paCharsInfo_t * paCharsInfo = (paCharsInfo_t *)font->glyph_dsc;
     uint16_t SumBytes;
-    uint16_t BytesPerFont = paCharsInfo->paAsciiInfo.Hight * paCharsInfo->paAsciiInfo.PerLinePixels / 8;
+    uint16_t BytesPerFont = paCharsInfo->paAsciiInfo.Hight * paCharsInfo->paAsciiInfo.PerLineBytes;
     
     SumBytes = BytesPerFont;
     
@@ -271,7 +269,7 @@ static inline uint8_t * _GetCN_FontDataFromMem(const lv_font_t *font, uint32_t C
     uint8_t FontType = NONE_FONT;
     paCharsInfo_t * paCharsInfo = (paCharsInfo_t *)font->glyph_dsc;
     uint16_t SumBytes;
-    uint16_t BytesPerFont = paCharsInfo->paAsciiInfo.Hight * paCharsInfo->paAsciiInfo.PerLinePixels / 8;
+    uint16_t BytesPerFont = paCharsInfo->paHanziInfo.Hight * paCharsInfo->paHanziInfo.PerLineBytes;
     
     SumBytes = BytesPerFont;
     
@@ -442,13 +440,12 @@ _ReadCN_Data:
     {
         uint8_t code1, code2;
         /* 根据汉字内码的计算公式锁定起始地址 */
-        code2 = CnCode >> 8;
-        code1 = CnCode & 0xFF;
+        code2 = CnCode >> 8;        /*!< 位码 */
+        code1 = CnCode & 0xFF;      /*!< 区码 */
         
         /* 由于字符编码是安顺序存储的，先存储到高位（区号），然后是低位（位号）。而我们用的是小端格式，
-            一个汉字两个字节，获取的16位变量，正好相反，16位变量的高位是位号，低位是区号。
-        */
-        FlashAddr = ((code1 - 0xA1) * 94 + (code2 - 0xa1)) * SumBytes + FlashAddr;
+            一个汉字两个字节，获取的16位变量，正好相反，16位变量的高位是位号，低位是区号。        */
+        FlashAddr = ((code1 - 0x81) * 190 + (code2 - 0x40) - (code2 / 128)) * SumBytes + FlashAddr;
     }
     else if (FontType == GB2312_FONT)
     {
@@ -458,9 +455,8 @@ _ReadCN_Data:
         code1 = CnCode & 0xFF;
         
         /* 由于字符编码是安顺序存储的，先存储到高位（区号），然后是低位（位号）。而我们用的是小端格式，
-            一个汉字两个字节，获取的16位变量，正好相反，16位变量的高位是位号，低位是区号。
-        */
-        FlashAddr = ((code1 - 0x81) * 190 + (code2 - 0x40) - (code2 / 128)) * SumBytes + FlashAddr;
+            一个汉字两个字节，获取的16位变量，正好相反，16位变量的高位是位号，低位是区号。        */
+        FlashAddr = ((code1 - 0xA1) * 94 + (code2 - 0xa1)) * SumBytes + FlashAddr;
     }
     if (ReadDataApi == NULL)
         return (uint8_t *)FONT_ERROR;

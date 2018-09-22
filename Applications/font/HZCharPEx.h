@@ -35,7 +35,7 @@ typedef struct
 {
     unsigned char Width;
     unsigned char Hight;
-    unsigned char PerLinePixels;
+    unsigned char PerLineBytes;
 }paCnInfo_t;
 
 /* ×ÖÌåĞÅÏ¢ */

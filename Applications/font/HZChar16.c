@@ -5,8 +5,8 @@
 /* 字体信息参数，不需要更改 */
 const paCharsInfo_t FontCn16 = 
 {
-    {8,  16, 8 },
-    {16, 16, 16},
+    {8,  16, 1 },
+    {16, 16, 2},
 };
 
 #ifdef USE_CN_INT_LIB
@@ -142,11 +142,7 @@ lv_font_t HZChar_16 =
         .unicode_last = 0x7f,                      /*Last Unicode letter in this font*/
 #endif
         .h_px = 16,                                  /*Font height in pixels*/
-#if defined USE_CN_EXT_LIB || defined USE_ASCII_EXT_LIB
         .glyph_bitmap = lv_FontDataBuf,             /*Bitmap of glyphs*/
-#else
-        .glyph_bitmap = NULL,             /*Bitmap of glyphs*/
-#endif
         .glyph_dsc = (void *)&FontCn16,             /*Description of glyphs*/
         .unicode_list = NULL,                        /*List of unicode characters*/
         .get_bitmap = lv_hzPEx_font_get_bitmap_continuous, /*Function pointer to get glyph's bitmap*/
